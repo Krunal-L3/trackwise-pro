@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+    /* Colors */
+    --color-primary: #3b5ac7;
+    --color-accent: #8fb2f9;
+    --color-background: #f4f6fb;
+    --color-dark: #3b3b3b;
+
+    --font-title: "Poppins", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+}
+
+@variant dark (&:where(.light, .light *));
+
+:root {
+    --h-nav: 90px;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+/* ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: var(--color-accent);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-background);
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	@apply bg-gray-100;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	@apply bg-gray-300 hover:bg-gray-400;
+  }
+
+
+  ::-webkit-scrollbar {
+    @apply h-1 w-1;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* background: #f1f1f1;  */
+    @apply bg-gray-200 rounded-md;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-md hover:bg-gray-400;
+  }
+
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+/* to center align content from both sides */
+.all-center {
+    @apply flex items-center justify-center;
+}
