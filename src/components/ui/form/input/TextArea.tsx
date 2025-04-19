@@ -3,15 +3,15 @@ import { twMerge } from "tailwind-merge";
 
 interface TextareaProps
     extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
-    disabled?: boolean; // Disabled state
-    error?: boolean; // Error state
-    hint?: string; // Hint text to display
+    disabled?: boolean;
+    error?: boolean;
+    hint?: string;
 }
 
 const TextArea: React.FC<TextareaProps> = ({
-    disabled = false, // Disabled state
-    error = false, // Error state
-    hint = "", // Default hint text
+    disabled = false,
+    error = false,
+    hint = "",
     ...props
 }) => {
     let textareaClasses = `w-full rounded-lg border px-4 py-2.5 text-sm shadow-theme-xs focus:outline-hidden`;

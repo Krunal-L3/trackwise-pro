@@ -121,7 +121,4 @@ const TabContent = React.forwardRef<
 });
 TabContent.displayName = "TabContent";
 
-// Attach Content to Tab for easier imports
-// Tab.Content = TabContent;
-
 export { Tabs, Tab, TabContent };

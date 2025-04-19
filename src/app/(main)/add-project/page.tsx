@@ -156,19 +156,6 @@ export default function NewProjectPage() {
         });
     };
 
-    // Handle member selection
-    // const toggleMember = (memberId) => {
-    //     const currentMembers = [...formData.members];
-    //     if (currentMembers.includes(memberId)) {
-    //         handleChange(
-    //             "members",
-    //             currentMembers.filter((id) => id !== memberId)
-    //         );
-    //     } else {
-    //         handleChange("members", [...currentMembers, memberId]);
-    //     }
-    // };
-
     // Handle form submission
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -193,16 +180,6 @@ export default function NewProjectPage() {
         newStatuses.splice(index, 1);
         handleChange("taskStatuses", newStatuses);
     };
-
-    // Update a task status
-    // const updateTaskStatus = (
-    //     index: number,
-    //     value: "To Do" | "In Progress" | "Done"
-    // ) => {
-    //     const newStatuses = [...formData.taskStatuses];
-    //     newStatuses[index] = value;
-    //     handleChange("taskStatuses", newStatuses);
-    // };
 
     // Animation variants
     const sectionVariants = {

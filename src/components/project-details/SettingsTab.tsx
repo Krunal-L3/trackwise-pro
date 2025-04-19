@@ -101,6 +101,7 @@ const SettingsTab: React.FC<{ projectData: ProjectData }> = ({
 
         try {
             console.log("Changes saved successfully", formData);
+            alert("Changes saved successfully!");
         } catch (error) {
             console.error("Failed to save changes", error);
         }
@@ -109,6 +110,7 @@ const SettingsTab: React.FC<{ projectData: ProjectData }> = ({
     const handleArchiveProject = () => {
         if (window.confirm("Are you sure you want to archive this project?")) {
             console.log("Project archived");
+            alert("Project archived successfully!");
         }
     };
 
@@ -119,6 +121,7 @@ const SettingsTab: React.FC<{ projectData: ProjectData }> = ({
             )
         ) {
             console.log("Project deleted");
+            alert("Project deleted successfully!");
         }
     };
 
